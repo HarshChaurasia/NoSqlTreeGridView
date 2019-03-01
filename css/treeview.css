@@ -1,0 +1,143 @@
+:focus {
+    outline: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+a:link, a:visited {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* Styles for the container of the tree (e.g. fonts, margins etc.) */
+.jsontree_tree {
+    font-family: 'PT Mono', monospace;
+    font-size: 14px;
+}
+
+/* Styles for a list of child nodes */
+.jsontree_child-nodes {
+    display: none;
+    margin-bottom: 5px;
+    line-height: 2;
+    padding-left:10px;
+}
+
+.jsontree_node_expanded > .jsontree_value-wrapper > .jsontree_value > .jsontree_child-nodes {
+    display: block;
+}
+
+/* Styles for labels */
+.jsontree_label-wrapper {
+    float: left;
+    margin-right: 8px;
+}
+
+.jsontree_label {
+    font-weight: normal;
+    vertical-align: top;
+    color: #000;
+    position: relative;
+    padding: 1px;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.jsontree_node_marked > .jsontree_label-wrapper > .jsontree_label {
+    background: #fff2aa;
+}
+
+/* Styles for values */
+.jsontree_value-wrapper {
+    display: block;
+    overflow: hidden;
+}
+
+.jsontree_node_complex > .jsontree_value-wrapper {
+    overflow: inherit;
+}
+
+.jsontree_value {
+    vertical-align: top;
+    display: inline;
+}
+
+.jsontree_value_null {
+    color: #777;
+    font-weight: bold;
+}
+
+.jsontree_value_string {
+    color: #025900;
+    font-weight: bold;
+}
+
+.jsontree_value_number {
+    color: #000E59;
+    font-weight: bold;
+}
+
+.jsontree_value_boolean {
+    color: #600100;
+    font-weight: bold;
+}
+
+/* Styles for active elements */
+.jsontree_expand-button {
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTEiIGhlaWdodD0iMjIiPjxkZWZzPjxs%0D%0AaW5lYXJHcmFkaWVudCBpZD0iYSI+PHN0b3Agb2Zmc2V0PSIwIi8+PHN0b3Agb2Zmc2V0PSIxIiBz%0D%0AdG9wLW9wYWNpdHk9IjAiLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCB4bGluazpo%0D%0AcmVmPSIjYSIgY3g9IjkuNzM5IiBjeT0iOS43MTYiIGZ4PSI5LjczOSIgZnk9IjkuNzE2IiByPSIz%0D%0ALjcwOSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiLz48L2RlZnM+PGcgc3Ryb2tlPSIj%0D%0AMDAwIiBmaWxsPSJub25lIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTI5LjUgLTMzMy44NjIp%0D%0AIHRyYW5zbGF0ZSgwIC4xODgpIj48cmVjdCB0cmFuc2Zvcm09Im1hdHJpeCguOTYyIDAgMCAuOTcx%0D%0AIDQuOTQzIDExLjU0OCkiIHJ5PSIyIiByeD0iMiIgeT0iMzMyLjM2MiIgeD0iMTMwIiBoZWlnaHQ9%0D%0AIjEwLjMzNyIgd2lkdGg9IjEwLjQzMiIgb3BhY2l0eT0iLjUiLz48Zz48cGF0aCBkPSJNMTMyIDMz%0D%0AOS4xNzVoNiIgb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMTM1IDMzNi4xNzV2NiIgb3BhY2l0eT0i%0D%0ALjUiLz48L2c+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjkuNSAtMzMzLjg2MikiPjxy%0D%0AZWN0IHdpZHRoPSIxMC40MzIiIGhlaWdodD0iMTAuMzM3IiB4PSIxMzAiIHk9IjMzMi4zNjIiIHJ4%0D%0APSIyIiByeT0iMiIgdHJhbnNmb3JtPSJtYXRyaXgoLjk2MiAwIDAgLjk3MSA0Ljk0MyAyMi43MzYp%0D%0AIiBvcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0xMzIgMzUwLjM2Mmg2IiBvcGFjaXR5PSIuNSIvPjwv%0D%0AZz48L2c+PC9zdmc+');
+}
+
+.jsontree_node_expanded > .jsontree_label-wrapper > .jsontree_label > .jsontree_expand-button {
+    background-position: 0 -11px;
+}
+.jsontree_tree clearfix{
+    margin:0px;
+    padding:0px !important;
+}
+
+.jsontree_show-more {
+    cursor: pointer;
+}
+
+.jsontree_node_expanded > .jsontree_value-wrapper > .jsontree_value > .jsontree_show-more {
+    display: none;
+}
+
+.jsontree_node_empty > .jsontree_label-wrapper > .jsontree_label > .jsontree_expand-button,
+.jsontree_node_empty > .jsontree_value-wrapper > .jsontree_value > .jsontree_show-more {
+    display: none !important;
+}
+
+.jsontree_node_complex > .jsontree_label-wrapper > .jsontree_label {
+    cursor: pointer;
+}
+
+.jsontree_node_empty > .jsontree_label-wrapper > .jsontree_label {
+    cursor: default !important;
+}
